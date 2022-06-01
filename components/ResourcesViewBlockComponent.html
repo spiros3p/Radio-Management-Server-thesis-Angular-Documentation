@@ -437,8 +437,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="36"
-                            class="link-to-prism">src/app/components/resources-view-block/resources-view-block.component.ts:36</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/components/resources-view-block/resources-view-block.component.ts:42</a></div>
                 </td>
             </tr>
 
@@ -570,7 +570,13 @@ export class ResourcesViewBlockComponent implements OnInit, OnChanges {
 
   /** Pagination use to change pages */
   ngOnChanges(changes: SimpleChanges): void {
-    this.page &#x3D; 1;
+    try {
+      if (this.page &gt; Math.ceil(changes.resources.currentValue.length / 6)) {
+        this.page &#x3D; 1;
+      }
+    }catch(e){
+      console.error(e);
+    }
   }
 
    /**

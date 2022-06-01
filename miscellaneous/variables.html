@@ -78,10 +78,10 @@
                             <a href="#iconDefault" title="src/app/components/create-resource/create-resource.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../create-resource.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconDefault" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
+                            <a href="#iconDefault" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconDefault" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
+                            <a href="#iconDefault" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
                         </li>
                         <li>
                             <a href="#iconDefault" title="src/app/components/single-resources/single-resources.component.ts" ><b>iconDefault</b>&nbsp;&nbsp;&nbsp;(src/.../single-resources.component.ts)</a>
@@ -93,10 +93,10 @@
                             <a href="#iconRetinaUrl" title="src/app/components/map-page/map-page.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../map-page.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconRetinaUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
+                            <a href="#iconRetinaUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconRetinaUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
+                            <a href="#iconRetinaUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
                         </li>
                         <li>
                             <a href="#iconRetinaUrl" title="src/app/components/single-resources/single-resources.component.ts" ><b>iconRetinaUrl</b>&nbsp;&nbsp;&nbsp;(src/.../single-resources.component.ts)</a>
@@ -108,10 +108,10 @@
                             <a href="#iconUrl" title="src/app/components/map-page/map-page.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../map-page.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
+                            <a href="#iconUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#iconUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
+                            <a href="#iconUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
                         </li>
                         <li>
                             <a href="#iconUrl" title="src/app/components/single-resources/single-resources.component.ts" ><b>iconUrl</b>&nbsp;&nbsp;&nbsp;(src/.../single-resources.component.ts)</a>
@@ -135,10 +135,10 @@
                             <a href="#shadowUrl" title="src/app/components/map-page/map-page.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../map-page.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#shadowUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
+                            <a href="#shadowUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
                         </li>
                         <li>
-                            <a href="#shadowUrl" title="src/app/components/resource-item-block/resource-item-block.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-block.component.ts)</a>
+                            <a href="#shadowUrl" title="src/app/components/resource-item-list/resource-item-list.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../resource-item-list.component.ts)</a>
                         </li>
                         <li>
                             <a href="#shadowUrl" title="src/app/components/single-resources/single-resources.component.ts" ><b>shadowUrl</b>&nbsp;&nbsp;&nbsp;(src/.../single-resources.component.ts)</a>
@@ -342,6 +342,7 @@
                     <td class="col-md-4">
                         <i>Default value : </i><code>{
   production: true,
+  // * _configure apiUrl variable as empty string &quot;&quot; to send resources request to nodejs server and use its proxy service to connect to the resources server_
   apiUrl: &quot;&quot;,
   // apiUrl: &quot;http://192.168.2.x:5000&quot;,
   authUrl: &quot;http://192.168.2.x:3000&quot;,
@@ -355,6 +356,7 @@
                     <div class="io-description"><p>Environment Variables for Production build.</p>
 <ul>
 <li><strong>apiUrl</strong>: is the target URL for the restAPI that serves the Resources (based on the TMF369 model)</li>
+<li><em>configure apiUrl variable as empty string &quot;&quot; to send resources request to nodejs server and use its proxy service to connect to the resources server</em></li>
 <li><strong>authUrl</strong>: is the target URL for the restAPI that is being used for authentication for protecting the routes</li>
 <li><strong>defaultListView</strong>: setting it to <code>true</code> will load the resources on the homepage with the List View by default</li>
 </ul>
@@ -388,6 +390,7 @@
                     <td class="col-md-4">
                         <i>Default value : </i><code>{
   production: false,
+  // * _configure apiUrl variable as empty string &quot;&quot; to send resources request to nodejs server and use its proxy service to connect to the resources server_
   // apiUrl: &quot;&quot;,
   apiUrl: &quot;http://localhost:5000&quot;,
   authUrl: &quot;http://localhost:3000&quot;,
@@ -401,6 +404,8 @@
                     <div class="io-description"><p>Environment Variables for Development build.</p>
 <ul>
 <li><strong>apiUrl</strong>: is the target URL for the restAPI that serves the Resources (based on the TMF369 model)</li>
+<li><em>configure apiUrl variable as empty string &quot;&quot; to send resources request to nodejs server and use its proxy service to connect to the resources server</em>
+<em>configure apiUrl variable as empty string &quot;&quot; to send resources request to nodejs server and use its proxy service to connect to the resources server</em></li>
 <li><strong>authUrl</strong>: is the target URL for the restAPI that is being used for authentication for protecting the routes</li>
 <li><strong>defaultListView</strong>: setting it to <code>true</code> will load the resources on the homepage with the List View by default</li>
 </ul>
@@ -521,7 +526,7 @@
         </tbody>
     </table>
 </section>
-    <h3>src/app/components/resource-item-list/resource-item-list.component.ts</h3>
+    <h3>src/app/components/resource-item-block/resource-item-block.component.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>
@@ -637,7 +642,7 @@
         </tbody>
     </table>
 </section>
-    <h3>src/app/components/resource-item-block/resource-item-block.component.ts</h3>
+    <h3>src/app/components/resource-item-list/resource-item-list.component.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>

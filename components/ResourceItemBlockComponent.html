@@ -445,8 +445,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="84"
-                            class="link-to-prism">src/app/components/resource-item-block/resource-item-block.component.ts:84</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/components/resource-item-block/resource-item-block.component.ts:89</a></div>
                 </td>
             </tr>
 
@@ -762,8 +762,13 @@ export class ResourceItemBlockComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.indexLocation &#x3D; this.resource.resource_characteristic?.findIndex(e &#x3D;&gt; e.name &#x3D;&#x3D;&#x3D; &#x27;location&#x27;) || -1;
-    this.indexIP &#x3D; this.resource.resource_characteristic?.findIndex(e &#x3D;&gt; e.name &#x3D;&#x3D;&#x3D; &#x27;IP&#x27;) || -1;
+    if (this.resource.resource_characteristic) {
+      this.indexLocation &#x3D; this.resource.resource_characteristic.findIndex(e &#x3D;&gt; e.name &#x3D;&#x3D;&#x3D; &#x27;location&#x27;);
+      this.indexIP &#x3D; this.resource.resource_characteristic.findIndex(e &#x3D;&gt; e.name &#x3D;&#x3D;&#x3D; &#x27;IP&#x27;);
+    } else {
+      this.indexLocation &#x3D; -1;
+      this.indexIP &#x3D; -1;
+    }
   }
 
   ngAfterViewInit(): void {

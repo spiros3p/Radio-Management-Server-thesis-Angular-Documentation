@@ -1316,8 +1316,8 @@ export class ResourcesFilterComponent implements OnInit {
 .filter-container {
     border: 1px solid black;
     border-radius: 5px;
-    padding: 5px 80px 0 0;
-    // padding-top: 5px;
+    // padding: 5px 80px 0 0;
+    padding-top: 5px;
     margin-bottom: 20px;
     min-height: 46px;
     background-color: $bgColor;
@@ -1325,6 +1325,16 @@ export class ResourcesFilterComponent implements OnInit {
 
     &amp; .search-option-container{
         padding: 0 5px;
+
+        @media (max-width: 629px){
+            width: 100%;
+            padding-right: 80px;
+
+            &amp; .search-option{
+                width: 100% !important;
+            }
+        }
+
         &amp; .search-option {
             height: 33px;
             border: 1px solid black;
@@ -1332,7 +1342,7 @@ export class ResourcesFilterComponent implements OnInit {
             padding-left: 10px;
             padding-right: 8px;
             // max-width: 200px;
-            width: 100%;
+            width: 200px;
             margin-bottom: 5px;
             &amp;:focus{
                 outline: $babyblue solid 1px;
